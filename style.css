@@ -1,19 +1,25 @@
-  html,body{
+  
+  @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  html,
+  body{
             height: 100%;
             margin: 0;
             font-size: 17px;
-            font-family: "lato",sans-serif;
             font-weight: 400;
             line-height: 1.8em;
             color: rgb(80, 70, 70);
+              font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
         }
         .p_image1{
-            background-image: url(   https://images.hdqwalls.com/download/blossom-flowers-mw-1920x1080.jpg);
+            background-image:url(https://images.hdqwalls.com/download/blossom-flowers-mw-1920x1080.jpg);
             height: 100%;
             position: relative;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            min-height: 100%;
         }
         .p_image1,
         .p_image2,
@@ -24,10 +30,7 @@
             background-repeat: no-repeat;
             background-attachment:fixed ;
         } 
-        .p_image1{
-            /* background-image: url(images/natural\ image\ 1.png); */
-            min-height: 100%;
-        }
+        
         
         .p_image2{
             background-image: url(https://images.hdqwalls.com/download/flowers-minimal-5y-1920x1080.jpg);
@@ -62,9 +65,39 @@
         .section_light{
             background-color:#F5F4EF;
             color: #3e3838;
+        } 
+    
         
-        }
-        .section_dark{
+      
+         .section_dark{
             background-color: #282e34;
             color: #ddd;
+        }
+        @media (max-width:786px) {
+            .text_bg{
+                font-size: 13px;
+                text-align: justify;
+                padding: 10px;
+            }
+            .p_image1,.p_image2{
+                background-size: cover;
+                min-height: 600px;
+            }
+            .p_image3{
+                background-size: cover;    
+            }
+            .section{
+                padding: 18px 80px;
+            }
+            .section_dark p
+      ,.section_light p{
+            /* width: 64.9rem; */
+            display: -webkit-box;
+            -webkit-line-clamp:5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        
         }
